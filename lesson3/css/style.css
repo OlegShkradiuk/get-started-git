@@ -1,29 +1,36 @@
 
-.box {
-    display: flex;
-    text-align: center;
-    flex-grow: 1;
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-    border: 3px solid gray;
-    margin-right: 30px;
-}
-
 .container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+}
+.title{
+    font-size: 20px;
+    
+}
+.chess-container{
+    display: table;
+    border: 1px solid black;
 }
 
-.box-one {
-    flex-grow: 0;
-}
+.cell {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+  }
+  
+  .chess-board{
+    display: table-row;
+  }
 
-.box-two {
-    flex-grow: 2;
-    align-self: flex-end;
-    flex-shrink: 2;
+  .chess-board div {
+	display: table-cell;
+}		
+
+
+.chess-board:nth-child(odd) div:nth-child(odd) {
+	background-color: black;
+}	
+.chess-board:nth-child(even) div:nth-child(even) {
+	background-color: black;
 }
