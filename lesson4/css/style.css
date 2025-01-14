@@ -20,5 +20,8 @@ html {
     background-color: blue;
     text-align: center;
     color: aliceblue;
-    margin-top: -2px;
+}
+
+.gallery--item__image{
+    display: block;
 }
